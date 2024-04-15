@@ -3,7 +3,7 @@ import java.util.Arrays;
 public class Task {
     public static void main(String[] args) {
         int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-        int start = 61;
+        int start = 1;
         int end = 9;
         int[] result = getSubArrayBetween(numbers, start, end);
         System.out.println(Arrays.toString(result));
@@ -18,7 +18,7 @@ public class Task {
         int lengthOfNewMassive = 0;
         for (int i = 0; i < numbers.length; i++) {
             if (numbers[i] >= start && numbers[i] <= end) {
-                lengthOfNewMassive ++;
+                lengthOfNewMassive++;
             }
         }
         int[] result = new int[lengthOfNewMassive];
@@ -26,7 +26,7 @@ public class Task {
         for (int i = 0; i < numbers.length; i++) {
             if (numbers[i] >= start && numbers[i] <= end) {
                 result[counter] = numbers[i];
-                counter ++;
+                counter++;
             }
         }
         return result;
