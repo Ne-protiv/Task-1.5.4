@@ -6,7 +6,6 @@ public class Task {
         int start = 1;
         int end = 9;
         int[] result = getSubArrayBetween(numbers, start, end);
-        System.out.println(Arrays.toString(result));
         System.out.print("[");
         for (int i = 0; i < result.length - 1; i++) {
             System.out.print(result[i] + ", ");
