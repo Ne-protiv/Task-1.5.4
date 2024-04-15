@@ -22,11 +22,11 @@ public class Task {
             }
         }
         int[] result = new int[lengthOfNewMassive];
-        int Counter = 0;
+        int counter = 0;
         for (int x = 0; x < numbers.length; x++) {
             if (numbers[x] >= start && numbers[x] <= end) {
-                result[Counter] = numbers[x];
-                Counter = Counter + 1;
+                result[counter] = numbers[x];
+                counter = counter + 1;
             }
         }
         return result;
